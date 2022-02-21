@@ -22,7 +22,7 @@ export function TransactionsTable() {
           </tr>
           <tr>
             <td>Aluguel</td>
-            <td className='withdraw'>R$ 1900,00</td>
+            <td className='withdraw'>- R$ 1900,00</td>
             <td>Habitação</td>
             <td>06/02/2022</td>
           </tr>
