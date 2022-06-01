@@ -2,12 +2,11 @@ import { Container } from "./styles"
 import incomeIcon from "../../assets/income.svg"
 import outcomeIcon from "../../assets/outcome.svg"
 import totalIcon from "../../assets/total.svg"
-import { useContext } from "react"
-import { TransactionsContext } from "../../TransactionsContext"
+import { useTransactions } from "../../hooks/useTransactions"
 import { currencyFormatter } from "../../utils/currencyFormatter"
 
 export function Summary() {
-  const { transactions } = useContext(TransactionsContext)
+  const { transactions } = useTransactions()
 
   const financialBalance = transactions.reduce(
     (acc, transaction) => {
