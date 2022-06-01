@@ -35,6 +35,10 @@ export const Container = styled.div`
     &:last-child {
       background: var(--green);
       color: #fff;
+
+      &.negative {
+        background: var(--red);
+      }
     }
   }
 `
